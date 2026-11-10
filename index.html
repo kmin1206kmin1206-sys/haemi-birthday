@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#bfe6ff">
+  <meta name="description" content="해미에게 전하는 하늘빛 생일 축하 편지">
+  <title>HAPPY BIRTHDAY, 해미야!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sky-decor" aria-hidden="true">
+    <span class="cloud cloud-one"></span>
+    <span class="cloud cloud-two"></span>
+    <span class="cloud cloud-three"></span>
+    <span class="sparkle sparkle-one">✦</span>
+    <span class="sparkle sparkle-two">✧</span>
+    <span class="sparkle sparkle-three">✦</span>
+    <span class="sparkle sparkle-four">✧</span>
+    <span class="bokeh bokeh-one"></span>
+    <span class="bokeh bokeh-two"></span>
+    <span class="bokeh bokeh-three"></span>
+  </div>
+
+  <main>
+    <section class="hero" aria-labelledby="birthday-title">
+      <p class="hero-kicker">A little note from my heart</p>
+      <h1 id="birthday-title" aria-label="HAPPY BIRTHDAY!">
+        <span>H</span><span>A</span><span>P</span><span>P</span><span>Y</span>
+        <span class="title-space" aria-hidden="true"></span>
+        <span>B</span><span>I</span><span>R</span><span>T</span><span>H</span><span>D</span><span>A</span><span>Y</span><span>!</span>
+      </h1>
+      <p class="hero-subtitle">오늘은 너가 세상에 온, 가장 반짝이는 날</p>
+      <div class="hero-characters" role="group" aria-label="생일을 축하하는 캐릭터들">
+        <img class="hero-character" src="character.png" alt="생일을 축하하는 노란 다람쥐 캐릭터">
+        <img class="hero-companion" src="companion.png" alt="파란 머리띠를 한 하얀 고양이 캐릭터">
+      </div>
+      <a class="scroll-cue" href="#celebration" aria-label="옆으로 밀어 축하 선물 보러 가기"><span></span></a>
+      <p class="swipe-hint" aria-hidden="true">옆으로 밀어보세요 →</p>
+      <div class="music-control">
+        <div class="music-options">
+          <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false">
+            <span aria-hidden="true">♫</span>
+            <span id="music-label">생일 배경음악 재생</span>
+          </button>
+          <button class="music-toggle" id="choice-music-toggle" type="button" aria-pressed="false">
+            <span aria-hidden="true">♫</span>
+            <span id="choice-music-label">다른 배경음악 재생</span>
+          </button>
+        </div>
+        <button class="music-reset" id="music-reset" type="button">↺ 배경음악 초기화</button>
+        <audio id="background-music" preload="none" loop src="birthday-music.mp3"></audio>
+        <audio id="choice-music" preload="none" loop src="birthday-music-choice.mp3"></audio>
+        <p class="music-choice-hint">두 곡 중 원하는 배경음악을 골라 들어보세요</p>
+        <p class="music-status" id="music-status" aria-live="polite">네가 좋아할지도 모르겠어서 넣어 봤어</p>
+      </div>
+      <div class="hero-portraits" role="group" aria-label="해미가 좋아하는 그림">
+        <div class="hero-portrait" role="img" aria-label="할로윈 분위기 속 붉은 머리 여성 캐릭터">
+          <img src="hero-character-art.png" alt="">
+        </div>
+        <img class="hero-portrait hero-extra-portrait" src="hero-extra-photo.png" alt="보라색 조명 아래 춤추는 캐릭터 일러스트">
+      </div>
+    </section>
+
+    <section class="celebration reveal" id="celebration" aria-label="꽃다발과 생일 케이크">
+      <div class="section-heading">
+        <span class="eyebrow">FOR YOUR SPECIAL DAY</span>
+        <h2>하늘만큼 예쁜 오늘</h2>
+      </div>
+      <div class="gift-scene">
+        <div class="bouquet-wrap">
+          <img class="bouquet" src="birthday-bouquet-final.png" alt="분홍 장미와 카네이션, 하늘색 꽃이 어우러진 풍성한 꽃다발">
+
+        </div>
+
+        <div class="cake-wrap" id="cake-scene">
+          <div class="cake-sparkles" aria-hidden="true"><i>✦</i><i>✧</i><i>✦</i><i>✧</i><i>·</i><i>✦</i></div>
+          <svg class="cake" viewBox="0 0 430 390" role="img" aria-labelledby="cake-title">
+            <title id="cake-title">딸기와 생크림으로 장식한 해미의 생일 케이크와 촛불</title>
+            <defs>
+              <linearGradient id="cakeTop" x2="0" y2="1"><stop stop-color="#fffdf8"/><stop offset="1" stop-color="#ffe9d5"/></linearGradient>
+              <linearGradient id="cakeSide" x2="0" y2="1"><stop stop-color="#f8d9a8"/><stop offset="1" stop-color="#e9b875"/></linearGradient>
+              <linearGradient id="cakeBottom" x2="0" y2="1"><stop stop-color="#fffaf1"/><stop offset="1" stop-color="#f2d9bd"/></linearGradient>
+              <linearGradient id="strawberry" x2="0" y2="1"><stop stop-color="#ff7b78"/><stop offset="1" stop-color="#d92e47"/></linearGradient>
+              <radialGradient id="flame"><stop stop-color="#fff8b6"/><stop offset=".55" stop-color="#ffd27e"/><stop offset="1" stop-color="#ff9e74" stop-opacity=".4"/></radialGradient>
+            </defs>
+            <ellipse cx="215" cy="349" rx="190" ry="25" fill="#9b6849" opacity=".16"/>
+            <g class="candle-group">
+              <path d="M153 132v-38h12v38M209 126V82h12v44M265 132V94h12v38" fill="#fffaf4" stroke="#d88f87" stroke-width="2"/>
+              <path d="M153 108h12M209 99h12M265 111h12" stroke="#e9a29a" stroke-width="5"/>
+              <path class="flame" d="M159 91c-20-19 5-30 4-45 18 18 16 32 0 45Z" fill="url(#flame)"/>
+              <path class="flame delay" d="M215 79c-20-19 5-30 4-45 18 18 16 32 0 45Z" fill="url(#flame)"/>
+              <path class="flame delay-two" d="M271 91c-20-19 5-30 4-45 18 18 16 32 0 45Z" fill="url(#flame)"/>
+            </g>
+            <path d="M118 131h194v66q0 24-24 24H142q-24 0-24-24Z" fill="url(#cakeSide)" stroke="#fff" stroke-width="3"/>
+            <ellipse cx="215" cy="131" rx="97" ry="24" fill="url(#cakeTop)" stroke="#fff" stroke-width="3"/>
+            <path d="M118 147q18 17 35 0 18 18 36 0 18 18 36 0 18 18 36 0 18 18 35 0" fill="none" stroke="#fffaf4" stroke-width="8" stroke-linecap="round"/>
+            <path d="M121 190q18 15 34 0 18 15 36 0 18 15 36 0 18 15 36 0 18 15 34 0" fill="none" stroke="#d94a55" stroke-width="7" opacity=".82"/>
+            <path d="M77 211h276v91q0 26-26 26H103q-26 0-26-26Z" fill="url(#cakeBottom)" stroke="#fff" stroke-width="3"/>
+            <ellipse cx="215" cy="211" rx="138" ry="29" fill="#fffaf4" stroke="#fff" stroke-width="3"/>
+            <path d="M78 224q20 19 39 0 20 19 39 0 20 19 39 0 20 19 39 0 20 19 39 0 20 19 39 0" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+            <path d="M80 285q20 15 38 0 20 15 39 0 20 15 39 0 20 15 39 0 20 15 39 0 20 15 39 0" fill="none" stroke="#d94a55" stroke-width="7" opacity=".78"/>
+            <g fill="#d94a55" stroke="#fffaf4" stroke-width="2">
+              <path d="M133 132c-17-22-9-40 5-43 5-12 22-12 27 0 15 4 20 22 3 43-10 12-25 12-35 0Z"/>
+              <path d="M198 115c-16-21-9-37 5-40 5-11 20-11 25 0 14 4 18 20 3 40-9 11-24 11-33 0Z"/>
+              <path d="M258 132c-17-22-9-40 5-43 5-12 22-12 27 0 15 4 20 22 3 43-10 12-25 12-35 0Z"/>
+            </g>
+            <g fill="#69a65b">
+              <path d="m134 93 9 5 2-10 6 10 8-9 1 11 10-4-6 12h-25Z"/>
+              <path d="m199 77 9 5 2-10 6 10 8-9 1 11 10-4-6 12h-25Z"/>
+              <path d="m259 93 9 5 2-10 6 10 8-9 1 11 10-4-6 12h-25Z"/>
+            </g>
+            <g fill="#ffd7a8">
+              <circle cx="144" cy="112" r="1.5"/><circle cx="157" cy="119" r="1.5"/><circle cx="151" cy="129" r="1.5"/>
+              <circle cx="209" cy="98" r="1.5"/><circle cx="222" cy="105" r="1.5"/><circle cx="216" cy="115" r="1.5"/>
+              <circle cx="269" cy="112" r="1.5"/><circle cx="282" cy="119" r="1.5"/><circle cx="276" cy="129" r="1.5"/>
+            </g>
+            <path d="M45 326h340q20 0 20 16v8H25v-8q0-16 20-16Z" fill="#fff5e8" stroke="#fff" stroke-width="3"/>
+            <text x="215" y="263" class="cake-message">
+              <tspan x="215" dy="0">해미야 진심으로</tspan>
+              <tspan x="215" dy="28">너의 생일을</tspan>
+              <tspan x="215" dy="28">축하해</tspan>
+            </text>
+          </svg>
+        </div>
+      </div>
+      <p class="gift-caption">분홍 꽃처럼 사랑스럽고, 촛불처럼 반짝이는 하루가 되길</p>
+      <div class="voucher-gift">
+        <p>생일이니까 케이크 먹어 바부야</p>
+        <a class="voucher-download" href="cake-voucher.png" download="해미-초코케이크-교환권.png" aria-label="초코케이크 교환권 이미지 다운로드">
+          <img src="cake-voucher.png" alt="초코케이크 교환권 미리보기. 바코드가 포함되어 있어요">
+          <span>초코케이크 교환권 다운로드</span>
+        </a>
+        <button class="voucher-share" id="voucher-share" type="button" hidden>사진 앱에 저장</button>
+        <p class="voucher-share-status" id="voucher-share-status" aria-live="polite">휴대폰에서는 공유 메뉴에서 ‘사진에 저장’을 선택할 수 있어요.</p>
+      </div>
+    </section>
+
+    <section class="letter-section reveal" aria-labelledby="letter-heading">
+      <div class="section-heading">
+        <span class="eyebrow">A LETTER FOR YOU</span>
+        <h2 id="letter-heading">마음을 담아 보냈어</h2>
+      </div>
+      <p class="letter-hint" id="letter-hint">편지를 열어보세요 ✉️</p>
+      <button class="envelope" id="envelope" type="button" aria-expanded="false" aria-label="생일 편지 열기 또는 닫기">
+        <span class="letter-paper">
+          <span class="paper-content">
+            <span class="letter-date">To. 해미에게</span>
+            <span class="letter-copy">
+              <span>해미야 안녕! 생일 진심으로 축하해!</span>
+              <span>너 덕분에 누군가의 생일을 준비한다는 게 이렇게 설레는 건지 처음 알았어. 정말 태어나 줘서 고마워, 바보야.</span>
+              <span>나에게 소중한 너의 생일인데도 직접 얼굴 보면서 축하해 주지 못해서 미안해. 그렇지만 너의 생일을 축하하는 마음만은 누구보다도 크단다.</span>
+              <span>오늘 내가 준비한 선물은 백화요란인 너에게 바치는 꽃과 내 능력으로 만든 이 웹사이트야. 내년에도 너의 생일을 축하할 수 있으면 좋겠어.</span>
+              <span>편지에 무슨 내용을 쓸까 고민하다가 그냥 나에게 네가 어떤 의미를 가지는지 쓰게 됐어.</span>
+              <span>나에게 너는 '꽃'이야. 너는 너무나도 아름답고 예쁜 꽃이야. 처음에는 그저 아름다워서 가까이 가서 보려 했는데, 어느샌가 나는 너의 향기에 조용히 물들어 가고 있어. 나의 어리숙했던 영혼이 너의 꽃내음으로 점점 더 성숙해지고 있어. 너의 향기는 아마 평생 잊지 못할 거야.</span>
+              <span>아무리 생각해 봐도 나는 네가 좋아. 네가 행복할 수 있다면 나의 고통 따위는 아무것도 아니야. 아무 조건 없어. 그저 네가 좋아.</span>
+              <span>배달 음식을 뭘 시켜 먹을지 고민하는 귀여운 네가 좋아, 브로콜리를 싫어하는 네가 좋아, 제5인격과 젤다의 전설을 즐겨 하는 네가 좋아, 나쁜 사람을 혼내 주는 잔인한 영상을 보는 네가 좋아, 과일 먹으면서 우물우물 말하는 네가 좋아, 화났을 때 혀 차는 소리를 내는 네가 좋아, 치이카와를 좋아하는 네가 좋아, 예의 바른 네가 좋아.</span>
+              <span>내가 너를 좋아하는 이유는 이것보다 훨씬 많아.</span>
+              <span>평소에는 네가 2년 뒤에 다시 오라는 말이 나에게 많은 제약을 주지만, 지금 생각해 보니 2년은 내가 더 성숙해지고 단단해질 수 있는 기회의 시간이라고 느껴져.</span>
+              <span>나는 네가 어떤 행동을 해도 너를 이해해 줄 수 있어. 나는 항상 너의 편이야. 그냥 나는 네가 좋아.</span>
+              <span>오늘은 세상에서 네가 제일 행복했으면 좋겠다.</span>
+              <span>그럼, 해미야 안녕!</span>
+            </span>
+            <span class="letter-signoff">- 시골 강아지 여경민 올림</span>
+          </span>
+        </span>
+        <span class="envelope-back" aria-hidden="true"></span>
+        <span class="envelope-flap" aria-hidden="true"></span>
+        <span class="envelope-front" aria-hidden="true"></span>
+        <img class="envelope-sticker" src="letter-sticker.png" alt="">
+        <span class="envelope-label" aria-hidden="true">생일 축하해</span>
+      </button>
+      <img class="letter-character" src="letter-character.png" alt="하트가 담긴 편지를 들고 있는 캐릭터">
+      <p class="letter-footer">천천히 읽어줘, 꼭 전하고 싶었던 말이야</p>
+    </section>
+
+    <section class="ocean-section" id="ocean-section" aria-label="해미의 사진과 생일 축하 메시지">
+      <div class="horizon-glow" aria-hidden="true"></div>
+      <div class="ocean-message reveal">
+        <span class="eyebrow">WISHING YOU THE BLUEST SKY</span>
+        <h2>오늘의 행복이 오래오래<br>파도처럼 밀려오길</h2>
+        <p>해미(海美), 바다가 아니라 세상에서 너가 제일 예뻐, <span class="birthday-wish">태어나줘서</span> 고마워</p>
+      </div>
+      <div class="sea">
+        <button class="ocean-photo" id="photo-flip" type="button" aria-pressed="false" aria-label="둥근 사진을 뒤집어 첨부한 사진 보기">
+          <span class="photo-flip-inner">
+            <span class="photo-flip-face photo-flip-front">
+              <img src="haemi-photo.png" alt="">
+            </span>
+            <span class="photo-flip-face photo-flip-back" aria-hidden="true">
+              <img src="haemi-flip-photo.jpg" alt="">
+            </span>
+          </span>
+        </button>
+        <p class="photo-hint" id="photo-hint">사진을 눌러 뒤집어 보세요 ✨</p>
+        <svg class="photo-waves" viewBox="0 0 1440 260" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 92Q180 34 360 92T720 92t360 0 360 0V260H0Z" fill="#9acfea"/>
+          <path d="M0 132Q180 77 360 132t360 0 360 0 360 0V260H0Z" fill="#5999c3"/>
+          <path d="M0 177Q180 133 360 177t360 0 360 0 360 0V260H0Z" fill="#306d97"/>
+        </svg>
+        <svg class="waves wave-back" viewBox="0 0 1440 260" preserveAspectRatio="none">
+          <path d="M0 68Q180 25 360 68T720 68t360 0 360 0V260H0Z" fill="#9acfea"/>
+          <path d="M0 103Q180 62 360 103t360 0 360 0 360 0V260H0Z" fill="#79b9dc"/>
+        </svg>
+        <svg class="waves wave-front" viewBox="0 0 1440 250" preserveAspectRatio="none">
+          <path d="M0 72Q180 35 360 72t360 0 360 0 360 0V250H0Z" fill="#5999c3"/>
+          <path d="M0 110Q180 77 360 110t360 0 360 0 360 0V250H0Z" fill="#397ca9"/>
+          <path d="M0 166Q180 139 360 166t360 0 360 0 360 0V250H0Z" fill="#306d97"/>
+        </svg>
+        <div class="water-shimmer shimmer-one"></div>
+        <div class="water-shimmer shimmer-two"></div>
+        <div class="water-shimmer shimmer-three"></div>
+        <svg class="woman" viewBox="0 0 220 430" role="img" aria-label="긴 머리와 원피스를 바람에 날리며 바다를 바라보는 여성의 남색 실루엣">
+          <g class="woman-reflection" transform="translate(0 760) scale(1 -1)" opacity=".26">
+            <use href="#woman-shape"/>
+          </g>
+          <g class="woman-figure">
+            <g id="woman-shape">
+              <!-- 머리카락 뒤로 목과 어깨, 허리선이 보이는 뒷모습 -->
+              <path class="hair" d="M82 84C70 49 87 22 111 22c26 0 42 22 35 51-3 14-9 22-13 30l6 57c2 19-7 33-17 37l-4-72c-9 13-26 20-40 12-10-6-15-17-13-31l8-22c-4-15-2-26 9-36Z" fill="#102b49"/>
+              <path d="M88 64c1-21 13-33 27-33 17 0 28 14 26 34l-2 17c-2 17-11 30-24 31-14 1-25-13-27-31Z" fill="#183352"/>
+              <path d="M98 105v20q12 12 25 0v-22Z" fill="#183352"/>
+              <path d="M99 118c-9 1-19 3-27 10l-12 22c-5 10 1 21 9 23 7 1 10-5 14-13l9-15 9-2 20 0 12 2 9 16c4 8 8 14 15 12 8-2 12-12 6-22l-14-23c-7-7-17-9-27-10-6 8-17 8-23 0Z" fill="#183352"/>
+              <path d="M99 143q12 8 25 0l13 57q-6 10-25 10t-26-10Z" fill="#183352"/>
+              <path d="M74 130c-8 10-12 25-11 39l-2 31c-1 10 2 18 7 18s8-7 8-16l5-30 11-27-3-12Z" fill="#183352"/>
+              <path d="M149 130c8 10 12 25 11 39l2 31c1 10-2 18-7 18s-8-7-8-16l-5-30-11-27 3-12Z" fill="#183352"/>
+              <path d="M85 199q24 12 53 0 10 8 17 27l18 107q-57 24-116 0l18-107q3-18 10-27Z" fill="#183352"/>
+              <path class="dress-hem" d="M63 306q53 19 105 0l8 29q-60 24-121 0Z" fill="#183352"/>
+              <path d="M82 217q27 10 56 0M108 217v92" fill="none" stroke="#24415f" stroke-width="2" opacity=".7"/>
+              <path d="M79 326 68 377q-1 8 6 8h19m57-59 13 51q2 8-5 8h-19" fill="none" stroke="#183352" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M91 59q9-22 27-22m-28 37q-8 29-5 55m57-53q6 22 3 48" fill="none" stroke="#24415f" stroke-width="2" stroke-linecap="round" opacity=".65"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <footer class="page-footer">Made with love, just for Haemi <span>♡</span></footer>
+    </section>
+
+    <section class="love-section" aria-labelledby="love-heading">
+      <div class="love-decoration love-decoration-one" aria-hidden="true">♡</div>
+      <div class="love-decoration love-decoration-two" aria-hidden="true">✦</div>
+      <div class="love-message">
+        <span class="eyebrow">A LITTLE MORE TO SAY</span>
+        <h2 id="love-heading">사랑해</h2>
+        <img class="love-illustration" src="couple-love.png" alt="두 캐릭터가 함께 하트를 만들고 있는 그림">
+        <p class="love-wish">오늘은 세상에서 너가 제일 행복했으면 좋겠다 바부야</p>
+      </div>
+      <div class="love-closing">
+        <p class="love-promise">꼭 결혼하자 바부야</p>
+        <p class="love-future">
+          <span>오늘 같은 봄이 계속될 거야.</span>
+          <span><em>내가 그렇게 만들게.</em> 사랑해.</span>
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
